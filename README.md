@@ -47,15 +47,15 @@ The datasets used in the paper are:
 To reproduce the results of RSPED, run the following commands:
 
 ```bash
-python main.py --dataset ICEWS14 --description rsped_icews14 --max-epochs 15 --timestamps 365 --use-valid False --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 1 --alpha 0.1 --lambdax 2 --gamma 0.1
+python main.py --dataset ICEWS14 --description rsped_icews14 --max-epochs 15 --timestamps 365 --use-valid False --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 5 --alpha 0.1 --lambdax 2 --gamma 0.1
 
-python main.py --dataset ICEWS18 --description rsped_icews18 --max-epochs 25 --timestamps 304 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 1 --alpha 0.1 --lambdax 2 --gamma 0.1
+python main.py --dataset ICEWS18 --description rsped_icews18 --max-epochs 25 --timestamps 304 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 7 --alpha 0.1 --lambdax 2 --gamma 0.1
 
-python main.py --dataset GDELT --description rsped_gdelt --max-epochs 25 --timestamps 2976 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 1 --alpha 0.1 --lambdax 2 --gamma 0.1
+python main.py --dataset GDELT --description rsped_gdelt --max-epochs 25 --timestamps 2976 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 7 --alpha 0.1 --lambdax 2 --gamma 0.1
 
-python main.py --dataset YAGO --description rsped_yago --max-epochs 25 --timestamps 189 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 1 --alpha 0.1 --lambdax 2 --gamma 0.1
+python main.py --dataset YAGO --description rsped_yago --max-epochs 25 --timestamps 189 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 4 --alpha 0.1 --lambdax 2 --gamma 0.1
 
-python main.py --dataset WIKI --description rsped_wiki --max-epochs 25 --timestamps 232 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 1 --alpha 0.1 --lambdax 2 --gamma 0.1
+python main.py --dataset WIKI --description rsped_wiki --max-epochs 25 --timestamps 232 --use-valid True --lr 0.001 --batch-size 1024 --embedding-dim 200 --dropout 0.2 --graph-layer 2 --history-len 5 --alpha 0.1 --lambdax 2 --gamma 0.1
 ```
 
 The trained models and evaluation logs will be saved under the `SAVE/` folder.
